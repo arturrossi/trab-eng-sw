@@ -40,6 +40,17 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="tipo" class="col-md-4 col-form-label text-md-right">{{ __('Tipo') }}</label>
+                            <div class="col-md-6">
+                                <select id="user_type" name="user_type">
+                                    <option value="pacient">Paciente</option>
+                                    <option value="nurse">Enfermeiro</option>
+                                    <option value="manager">Gerente</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Senha') }}</label>
 
                             <div class="col-md-6">
