@@ -16,14 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-
-// Route::namespace('Site')->group(function(){
-//     Route::get('/','HomeController');
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/record', 'Auth\RecordController@index')->name('record')->middleware('auth');
+// Route::namespace('Auth')->group(function(){
 // });
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
