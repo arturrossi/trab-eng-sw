@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-9">
             <div class="card">
-                <div class="card-header">{{ __('Teste disponíveis') }}</div>
+                <div class="card-header">{{ __('Testes disponíveis') }}</div>
                 <div class="card-body">
                     <table class="table table-striped">
                         <thead>
