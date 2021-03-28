@@ -14,13 +14,14 @@
                                 <th>Nome</th>
                                 <th>Fabricante</th>
                                 @if (Auth::user()->user_type=='pacient')
-                                <th>Indicação</th>
-                                <th>Resultado em</th>
-                                <th>Preço(R$)</th>
+                                    <th>Indicação</th>
+                                    <th>Resultado em</th>
+                                    <th>Preço(R$)</th>
                                 @else
                                     <th>Quantidade</th>
                                     <th>Vencimento</th>
                                 @endif
+                                <th>Ações</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -41,9 +42,11 @@
                                     ?>
                                     <td><?=$tempo?></td>
                                     <td><?=str_replace('.',',',$test->price)?></td>
+                                    <td><a href=""><i class="fa fa-cart-plus"></i></a></td>
                                 @else
                                     <td>{{$test->quantity}}</td>
                                     <td><?=date('d/m/Y',strtotime($test->due))?></td>
+                                    <td><a href=""><i class="fa fa-trash"></i></a></td>
                                 @endif
                             </tr>
                             @endforeach

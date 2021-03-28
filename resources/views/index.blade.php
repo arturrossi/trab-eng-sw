@@ -6,6 +6,7 @@
 
         <title>Home</title>
 
+        <script src="https://kit.fontawesome.com/1f658806c3.js" crossorigin="anonymous"></script>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
@@ -84,51 +85,53 @@
                 <h2>Etapa 2</h2>
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://github.com/arturrossi/trab-eng-sw">GitHub do grupo</a>
+                    <a href="https://github.com/arturrossi/trab-eng-sw"><i class="fa fa-github fa-2x"></i></a>
                 </div>
                 
                 <div class="row justify-content-center" style="padding: 30px;">
-                    <table class="m-b-md flex-center">
-                        <tr>
-                            <td>
-                                <b>André Carini</b>
-                            </td>
-                            <td>
-                                andre.carini@inf.ufrgs.br
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <b>Artur Rossi</b>
-                            </td>
-                            <td>
-                                arossi@inf.ufrgs.br
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <b>Paulo C. V. R. Junior</b>
-                            </td>
-                            <td>
-                            	paulocesar.junior@inf.ufrgs.br
-                            </td>
-                        </tr>    
-                        <tr>
-                            <td>
-                                <b>Santiago Lühring</b>
-                            </td>
-                            <td>
-                                santiago.luhring@inf.ufrgs.br
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <b>Vitor Hugo D. Ferrari</b> 
-                            </td>
-                            <td>
-                                vhdferrari@inf.ufrgs.br
-                            </td>
-                        </tr>
+                    <table class="table flex-center">
+                        <tbody>
+                            <tr>
+                                <td style="text-align:left;">
+                                    <b>André Carini</b>
+                                </td>
+                                <td>
+                                    andre.carini@inf.ufrgs.br
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:left;">
+                                    <b>Artur Rossi</b>
+                                </td>
+                                <td>
+                                    arossi@inf.ufrgs.br
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:left;">
+                                    <b>Paulo C. V. R. Junior</b>
+                                </td>
+                                <td>
+                                    paulocesar.junior@inf.ufrgs.br
+                                </td>
+                            </tr>    
+                            <tr>
+                                <td style="text-align:left;">
+                                    <b>Santiago Lühring</b>
+                                </td>
+                                <td>
+                                    santiago.luhring@inf.ufrgs.br
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:left;">
+                                    <b>Vitor Hugo D. Ferrari</b> 
+                                </td>
+                                <td>
+                                    vhdferrari@inf.ufrgs.br
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
