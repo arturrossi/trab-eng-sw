@@ -19,5 +19,5 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/record', 'Auth\RecordController@index')->name('record')->middleware('auth');
-// Route::namespace('Auth')->group(function(){
-// });
+Route::post('/record', 'Auth\RecordController@create')->name('record.create')->middleware('auth');
+Route::get('/view', 'Auth\ViewController@index')->name('view')->middleware('auth');

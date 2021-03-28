@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Test extends Model
 {
+    public $timestamps = false;
     protected $fillable = [
         'name',
         'manufacturer',
@@ -23,6 +24,6 @@ class Test extends Model
      */
     protected $casts = [
         'due' => 'datetime',
-        'price' => 'decimal',
+        'price' => 'double',
     ];
 }

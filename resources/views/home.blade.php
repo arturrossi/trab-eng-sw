@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -13,8 +12,11 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('Você está logado!') }}
+                    <i class="fa fa-address-book fa-2x"></i><a href="{{ route('view') }}"> Consultar Testes</a><br>
+                    @if ((Auth::user()->user_type !='pacient'))
+                        <i class="fa fa-plus-square fa-2x"></i><a href="{{ route('record') }}"><i></i> Cadastrar Testes</a><br>
+                    @endif
+                    <i class="fa fa-clock fa-2x"></i><a href="#"><i></i> Agendar Aplicação</a>
                 </div>
             </div>
         </div>

@@ -10,6 +10,7 @@ use App\Test;
 // use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Redirect;
 
 class RecordController extends Controller
 {
@@ -37,14 +38,19 @@ class RecordController extends Controller
      * @param  array  $data
      * @return \App\Test
      */
-    protected function create(array $data)
+    public function create(Request $request)
     {
-        return User::create([
-            'name' => $data['name'],
-            'manufacturer' => $data['manufacturer'],
-            'due' => $data['due'],
-            'test_result_time' => $data['test_result_time'],
-        ]);
+        $test = new Test();
+        $test->name= $request['name'];
+        $test->manufacturer= $request['manufacturer'];
+        $test->due= $request['due'];
+        $test->test_result_time= $request['test_result_time'];
+        $test->price= str_replace(',','.',$request['price']);
+        $test->quantity= $request['quantity'];
+        $test->requirements= $request['requirements'];
+        $test->save();
+        
+        return Redirect::route('view');
     }
 
     public function __construct()
@@ -59,10 +65,6 @@ class RecordController extends Controller
      */
     public function index()
     {
-        $tests = DB::table('tests')
-            ->select('*')
-            ->get();
-
-        return view('auth.form')->with(array('tests'=>$tests));
+        return view('auth.form');
     }
 }
