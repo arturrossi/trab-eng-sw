@@ -80,19 +80,56 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-                <p>code /var/www/html/engsoft</p>
+                <h1>INF01127 - Engenharia de Software N - Turma B</h1>
+                <h2>Etapa 2</h2>
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://github.com/arturrossi/trab-eng-sw">GitHub do grupo</a>
+                </div>
+                
+                <div class="row justify-content-center" style="padding: 30px;">
+                    <table class="m-b-md flex-center">
+                        <tr>
+                            <td>
+                                <b>André Carini</b>
+                            </td>
+                            <td>
+                                andre.carini@inf.ufrgs.br
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Artur Rossi</b>
+                            </td>
+                            <td>
+                                arossi@inf.ufrgs.br
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Paulo C. V. R. Junior</b>
+                            </td>
+                            <td>
+                            	paulocesar.junior@inf.ufrgs.br
+                            </td>
+                        </tr>    
+                        <tr>
+                            <td>
+                                <b>Santiago Lühring</b>
+                            </td>
+                            <td>
+                                santiago.luhring@inf.ufrgs.br
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Vitor Hugo D. Ferrari</b> 
+                            </td>
+                            <td>
+                                vhdferrari@inf.ufrgs.br
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
