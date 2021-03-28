@@ -29,7 +29,7 @@
                                 <td>{{$test->name}}</td>
                                 <td>{{$test->manufacturer}}</td>
                                 @if (Auth::user()->user_type =='pacient')
-                                    <td>{{$test->requirements}}</td>
+                                    <td style="text-align: left;">{{$test->requirements}}</td>
                                     <?php
                                         if($test->test_result_time>=60)
                                         {
