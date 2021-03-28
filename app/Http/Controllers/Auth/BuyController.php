@@ -31,7 +31,6 @@ class BuyController extends Controller
 
     public function check(Request $request)
     {
-        $id_user = $request['id_user'];
         $id_test = $request['id_test'];
         $test=Test::find($id_test);
         $data_agendamento = $request['dmy'];
@@ -48,18 +47,23 @@ class BuyController extends Controller
         }
         else
         {
-            $schedule = new Schedule();
-            $schedule->id_user=$id_user;
-            $schedule->id_test=$id_test;
-            $schedule->schedule=$datacompleta;
-            $schedule->save();
-            return view('auth.shoppingcartform')->with('test',$test);
+            return view('auth.shoppingcartform')->with(['test'=>$test,'schedule'=>$datacompleta]);
         }
     }
 
     public function pay(Request $request)
     {
-       
+        $schedule = new Schedule();
+        $schedule->id_user=$request['id_user'];
+        $schedule->id_test=$request['id_test'];
+        $schedule->schedule=$request['datacompleta'];
+        $schedule->save();
+
+        $tests = DB::table('tests')
+            ->select('*')
+            ->get();
+
+        return view('auth.view')->with(array('tests'=>$tests));
     }
 }
 

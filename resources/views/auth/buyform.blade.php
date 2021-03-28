@@ -4,12 +4,11 @@
     <div class="row justify-content-center">
         <div class="col-md-9">
             <div class="card">
-                <div class="card-header">{{ ("Comprar $test->name") }}</div>
+                <div class="card-header">{{ ("Agendar $test->name") }}</div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('buy.check') }}">
                         @csrf
-                        <input type="hidden" name="id_test" value="{{$test->id}}">
-                        <input type="hidden" name="id_user" value="{{Auth::user()->id}}">
+                        <input type="hidden" name="id_test" value="{{($test->id)}}">
                         <div class="form-group row">
                             <label for="dmy" class="col-md-4 col-form-label text-md-right">{{ __('Data') }}</label>
 
@@ -26,7 +25,7 @@
                         </div>
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-credit-card"></i>
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-clock"></i>
                                     {{ __('Agendar') }}
                                 </button>
                             </div>
