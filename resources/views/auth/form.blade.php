@@ -8,7 +8,7 @@
             <div class="card">
                 <div class="card-header">{{ __('Testes disponíveis') }}</div>
                 <div class="card-body">
-                    <table class="table table-striped">
+                    <table class="table table-striped" style="text-align: center;">
                         <thead>
                             <tr>
                                 <th>Nome</th>
@@ -34,7 +34,7 @@
                                     <td>{{$test->price}}</td>
                                 @else
                                     <td>{{$test->quantity}}</td>
-                                    <td>{{$test->due}}</td>
+                                    <td><?=date('d/m/Y',strtotime($test->due))?></td>
                                 @endif
                             </tr>
                             @endforeach
