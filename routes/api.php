@@ -20,4 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('record', 'RecordController@index');
 Route::get('view', 'ViewController@index');
 Route::get('buy', 'BuyController@index');
+Route::get('apply', 'ApplyController@index');
 

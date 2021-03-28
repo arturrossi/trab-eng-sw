@@ -21,7 +21,7 @@
                         <i class="fa fa-plus-square fa-2x"></i><a href="{{ route('record') }}"><i></i> Solicitar Testes</a><br>
                     @endif
                     @if ((Auth::user()->user_type =='nurse'))
-                        <i class="fa fa-folder-open fa-2x"></i><a href="#"><i></i> Registrar aplicação</a><br>
+                        <i class="fa fa-folder-open fa-2x"></i><a href="{{ route('apply') }}"><i></i> Registrar aplicação</a><br>
                     @endif
                 </div>
             </div>

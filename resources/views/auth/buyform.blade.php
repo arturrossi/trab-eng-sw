@@ -37,9 +37,3 @@
     </div>
 </div>
 @endsection
-{{-- <script src="{{ asset('js/app.js') }}"></script>
-<script type="text/javascript">
-    $(document).ready(function($){
-         
-    });
-</script> --}}

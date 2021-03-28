@@ -24,3 +24,5 @@ Route::get('/view', 'Auth\ViewController@index')->name('view')->middleware('auth
 Route::get('/buy', 'Auth\BuyController@index')->name('buy')->middleware('auth');
 Route::post('/buy/check', 'Auth\BuyController@check')->name('buy.check')->middleware('auth');
 Route::post('/buy/pay', 'Auth\BuyController@pay')->name('buy.pay')->middleware('auth');
+Route::get('/apply', 'Auth\ApplyController@index')->name('apply')->middleware('auth');
+Route::get('/apply/done', 'Auth\ApplyController@done')->name('apply.done')->middleware('auth');
