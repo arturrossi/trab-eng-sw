@@ -17,11 +17,11 @@
                                     <th>Indicação</th>
                                     <th>Resultado em</th>
                                     <th>Preço(R$)</th>
+                                    <th>Ações</th>
                                 @else
                                     <th>Quantidade</th>
                                     <th>Vencimento</th>
                                 @endif
-                                <th>Ações</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -42,11 +42,10 @@
                                     ?>
                                     <td><?=$tempo?></td>
                                     <td><?=str_replace('.',',',$test->price)?></td>
-                                    <td><a href=""><i class="fa fa-cart-plus"></i></a></td>
+                                    <td><a href="{{ route('buy',['id'=>$test->id]) }}"><i class="fa fa-cart-plus"></i></a></td>
                                 @else
                                     <td>{{$test->quantity}}</td>
                                     <td><?=date('d/m/Y',strtotime($test->due))?></td>
-                                    <td><a href=""><i class="fa fa-trash"></i></a></td>
                                 @endif
                             </tr>
                             @endforeach

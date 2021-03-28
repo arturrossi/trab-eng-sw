@@ -17,8 +17,8 @@
                     @else
                         <i class="fa fa-address-book fa-2x"></i><a href="{{ route('view') }}"> Consultar/Comprar Testes</a><br>
                     @endif
-                    @if ((Auth::user()->user_type !='pacient'))
-                        <i class="fa fa-plus-square fa-2x"></i><a href="{{ route('record') }}"><i></i> Cadastrar Testes</a><br>
+                    @if ((Auth::user()->user_type =='manager'))
+                        <i class="fa fa-plus-square fa-2x"></i><a href="{{ route('record') }}"><i></i> Solicitar Testes</a><br>
                     @endif
                 </div>
             </div>
