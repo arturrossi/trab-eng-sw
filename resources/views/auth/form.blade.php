@@ -16,7 +16,7 @@
                                 @if (Auth::user()->user_type=='pacient')
                                 <th>Indicação</th>
                                 <th>Resultado em</th>
-                                <th>Preço</th>
+                                <th>Preço(R$)</th>
                                 @else
                                     <th>Quantidade</th>
                                     <th>Vencimento</th>
@@ -30,8 +30,17 @@
                                 <td>{{$test->manufacturer}}</td>
                                 @if (Auth::user()->user_type =='pacient')
                                     <td>{{$test->requirements}}</td>
-                                    <td>{{$test->test_result_time}}</td>
-                                    <td>{{$test->price}}</td>
+                                    <?php
+                                        if($test->test_result_time>=60)
+                                        {
+                                            $t=$test->test_result_time/60;
+                                            $tempo=$t." horas";
+                                        }
+                                        else
+                                            $tempo=$test->test_result_time." minutos";
+                                    ?>
+                                    <td><?=$tempo?></td>
+                                    <td><?=str_replace('.',',',$test->price)?></td>
                                 @else
                                     <td>{{$test->quantity}}</td>
                                     <td><?=date('d/m/Y',strtotime($test->due))?></td>
