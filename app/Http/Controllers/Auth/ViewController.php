@@ -28,4 +28,13 @@ class ViewController extends Controller
 
         return view('auth.view')->with(array('tests'=>$tests));
     }
+
+    public function cadastrados()
+    {
+        $users = DB::table('users')
+            ->select('*')
+            ->get();
+
+        return view('auth.cadastrados')->with(array('users'=>$users));
+    }
 }

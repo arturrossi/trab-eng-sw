@@ -82,7 +82,6 @@
             <div class="content">
                 <img width="200" height="115" src="https://www.inf.ufrgs.br/site/wp-content/uploads/2017/09/logo-inf-200x115.jpg" class="attachment-size-logo-principal size-size-logo-principal" alt="" srcset="https://www.inf.ufrgs.br/site/wp-content/uploads/2017/09/logo-inf-200x115.jpg 200w, https://www.inf.ufrgs.br/site/wp-content/uploads/2017/09/logo-inf-300x172.jpg 300w, https://www.inf.ufrgs.br/site/wp-content/uploads/2017/09/logo-inf-768x440.jpg 768w, https://www.inf.ufrgs.br/site/wp-content/uploads/2017/09/logo-inf.jpg 983w" sizes="(max-width: 200px) 100vw, 200px">
                 <h1>INF01127 - Engenharia de Software N - Turma B</h1>
-                <h2>Etapa 2</h2>
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://github.com/arturrossi/trab-eng-sw"><i class="fa fa-github fa-2x"></i></a>
